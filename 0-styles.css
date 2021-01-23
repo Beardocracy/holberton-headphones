@@ -89,13 +89,18 @@ a:active {
 
 /* Header
 ========================== */
+.header .container {
+    display: flex;
+    justify-content: center;
+    padding: 27px 69px 0 66px;
+}
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 27px 200px 0 200px;
+    max-width: 1000px;
 }
 
 .container {
