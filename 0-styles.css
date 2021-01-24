@@ -308,6 +308,10 @@ a:active {
         justify-content: center;
         flex: 0 1 80%;
     }
+
+    .dummy {
+        flex: 0 1 10%;
+    }
 }
 
 .menu-btn:checked ~ .navbar-menu {
