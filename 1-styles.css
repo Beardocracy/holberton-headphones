@@ -62,7 +62,25 @@
     font-weight: normal;
     font-style: normal;
     font-display: block;
+}
+
+[class^="holb-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'holberton_school-icon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: var(--color-primary);
+    font-size: 77px;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
+  
 
 /* Base
 ============================= */
@@ -368,6 +386,8 @@ h1 + p {
     font-size: 14px;
     line-height: 26px;
     margin-top: 13px;
+    text-align: center;
+    max-width: 180px;
 }
 
 .card-item {
@@ -375,10 +395,48 @@ h1 + p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 180px;
+    margin-top: 80px;
+    width: 207px;
 }
 
 .card-list {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.cards {
+    width: 100%;
+}
+
+@media screen and (max-width: 827px) {
+    .cards {
+        width: 472px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cards {
+        width: 207px;
+    }
+}
+
+.holb-icon-sound:before {
+    content: "\e90e";
+}
+
+.holb-icon-video:before {
+    content: "\e910";
+}
+
+.holb-icon-music:before {
+    content: "\e90d";
+}
+
+.holb-icon-hearing:before {
+    content: "\e909";
 }
