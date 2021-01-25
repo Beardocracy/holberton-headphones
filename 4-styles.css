@@ -562,3 +562,51 @@ textarea::placeholder {
     line-height: 16.41px;
     font: var(--font-family-base);
 }
+
+/* FOOTER
+================*/
+
+.footer {
+    background: var(--color-background);
+    height: 249px;
+}
+
+.footer .container {
+    max-width: 1000px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.footer .logo-share-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 90px 44px 0 56px;
+}
+
+.social-item {
+    fill: var(--text-color);
+}
+
+.social-item + .social-item {
+    margin-left: 20px;
+}
+
+.footer .footnote {
+    opacity: 0.35;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+@media screen and (max-width: 480px) {
+    .footer .logo-share-icons {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 107px;
+        margin: 48px 0 30px 0;
+    }
+}
