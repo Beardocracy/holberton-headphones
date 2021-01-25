@@ -256,6 +256,10 @@ h1 + p {
 .what-we-do .container {
     margin-top: 110px;
     margin-bottom: 110px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Button */
@@ -340,4 +344,33 @@ h1 + p {
 .menu-btn:checked ~ .navbar-menu .nav {
     max-height: 100%;
     overflow: inherit;
+}
+
+.card-item h3 {
+    font-weight: var(--font-weight-semibold);
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+.card-item p {
+    font-size: 14px;
+    line-height: 26px;
+    margin-top: 13px;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+}
+
+.card-list {
+    display: flex;
+    justify-content: center;
+}
+
+.what-we-do .container {
+    
 }
