@@ -543,6 +543,10 @@ fieldset {
     font-style: normal;
 }
 
+.form-group .button {
+    margin-top: 40px;
+}
+
 input,
 textarea {
     border: none;
