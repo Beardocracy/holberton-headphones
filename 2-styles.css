@@ -447,3 +447,26 @@ h1 + p {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.dot-icon {
+    background-image: url(images/pentagone.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 190px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.two-percent {
+    font-size: 46px;
+    line-height: 26px;
+    font-family: var(--font-family-base);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-white);
+    text-align: center;
+    margin-top: 50px;
+}
