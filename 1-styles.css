@@ -277,14 +277,9 @@ h1 + p {
     margin-top: 40px;
 }
 
-.what-we-do {
-    display: flex;
-    flex-direction: column;
-}
-
 .what-we-do .container {
-    margin-top: 110px;
-    margin-bottom: 110px;
+    padding-top: 110px;
+    padding-bottom: 110px;
     display: flex;
     justify-content: center;
     flex-direction: column;
