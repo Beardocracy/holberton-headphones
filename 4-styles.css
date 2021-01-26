@@ -237,7 +237,7 @@ a:active {
 .header-hero-background {
     background-image: url(images/headphones_hero_1.jpg);
     background-color: var(--color-background);
-    height: 800px;
+    min-height: 800px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -604,3 +604,29 @@ textarea::placeholder {
         margin: 48px 0 30px 0;
     }
 }
+
+/* Skip Links
+=================*/
+
+.off-screen {
+    left: -100vw;
+    position: absolute;
+  }
+
+  .skip-link {
+    background: var(--color-black);
+    color: var(--color-white);
+    left: 0;
+    padding: 0.7rem;
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    z-index: 10;
+    transform: translateY(-1rem);
+    transition: transform .2s ease-in-out, opacity .2s ease-in-out;
+  }
+
+  .skip-link:focus {
+    opacity: 1;
+    transform: translateY(0);
+  } 
