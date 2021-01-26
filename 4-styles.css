@@ -315,7 +315,7 @@ h1 + p {
 
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
     :root {
         --nav-item-margin: 1.8rem;
         --section-body-padding: 266px;
@@ -323,7 +323,7 @@ h1 + p {
     
     .navbar-menu {
         display: none;
-        flex: 1;
+        flex: 0 1 100%;
     }
     
     .navbar-menu .nav {
@@ -353,13 +353,7 @@ h1 + p {
         align-items: center;
     }
     .header-logo {
-        display: flex;
-        justify-content: center;
-        flex: 0 1 80%;
-    }
-
-    .dummy {
-        flex: 0 1 10%;
+        margin: 0 auto;
     }
 }
 
